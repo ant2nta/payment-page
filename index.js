@@ -14,7 +14,11 @@ $(function() {
 
   getCountries().then(data => {
     for (let country of data) {
-      select.append(`<option>${country}</option>`);
+      if (country === "Ukraine") {
+        select.append(`<option selected>${country}</option>`);
+      } else {
+        select.append(`<option>${country}</option>`);
+      }
     }
   });
   
