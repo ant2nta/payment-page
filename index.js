@@ -13,7 +13,7 @@ $(function() {
   const year_now = (new Date()).getFullYear();
 
   getCountries().then(data => {
-    for (let country of Object.values(data)) {
+    for (let country of data) {
       select.append(`<option>${country}</option>`);
     }
   });
