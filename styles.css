@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap");
+body, html, h1, h2, h3,
+p, ul, li, input, button,
+form, select, hr {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.form {
+  margin: 0 auto;
+  max-width: 1190px;
+  padding: 40px 160px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./images/gackground.jpg");
+  background-size: cover;
+  border-radius: 50px;
+}
+@media (max-width: 1100px) {
+  .form {
+    padding: 40px 60px;
+  }
+}
+@media (max-width: 500px) {
+  .form {
+    padding: 40px 30px;
+  }
+}
+.form__main, .form__info {
+  width: 50%;
+}
+@media (max-width: 800px) {
+  .form__main, .form__info {
+    width: auto;
+  }
+}
+.form__block {
+  display: flex;
+  gap: 50px;
+}
+@media (max-width: 800px) {
+  .form__block {
+    display: block;
+  }
+}
+.form input {
+  font-style: italic;
+  border: none;
+}
+.form h2 {
+  font-weight: 400;
+}
+.form input, .form select {
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-size: 16px;
+  border: 1px solid rgb(255, 255, 255);
+}
+.form input:focus-visible, .form select:focus-visible {
+  outline: none;
+}
+.form__btn {
+  margin: 0 auto;
+  font-size: 18px;
+  padding: 20px 65px;
+  background-color: rgb(255, 115, 1);
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  .form__btn {
+    margin-top: 40px;
+  }
+}
+
+.info__title {
+  margin-bottom: 48px;
+}
+.info__product {
+  background-color: #fff;
+  color: black;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.main__block {
+  display: flex;
+  gap: 20px;
+}
+.main__check-label {
+  margin: 15px 0;
+  font-weight: 300;
+  display: flex;
+  gap: 6px;
+}
+.main__email, .main__block, .main__country, .main__card {
+  margin-bottom: 14px;
+}
+.main__phone {
+  margin-bottom: 18px;
+}
+.main__first, .main__last {
+  width: 50%;
+}
+.main__checkbox {
+  height: 16px;
+  width: 16px;
+}
+.main__error {
+  font-size: 14px;
+  letter-spacing: normal;
+  color: red;
+  visibility: hidden;
+}
+
+.images {
+  margin-top: 18px;
+}
+.images__image {
+  background-color: #fff;
+  padding: 14px;
+  border-radius: 10px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+@media (max-width: 440px) {
+  .images__image {
+    padding: 14px 0;
+  }
+}
+.images__visa, .images__paypal {
+  object-fit: contain;
+  height: 30px;
+  width: 50%;
+}
+
+.card__flex {
+  width: 50%;
+  display: flex;
+  gap: 20px;
+}
+.card__month, .card__year {
+  width: 50%;
+}
+@media (max-width: 440px) {
+  .card__month, .card__year {
+    padding: 0 5px !important;
+  }
+}
+.card__code {
+  width: 50%;
+}
+
+/*# sourceMappingURL=styles.css.map */

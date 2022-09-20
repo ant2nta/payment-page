@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Task</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./index.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Hello World</h1>
+    <form onsubmit="" class="form">
+      <div class="form__block">
+        <div class="form__main main">
+          <h2 class="main__title">
+            Billing Information
+          </h2>
+
+          <label for="check" class="main__check-label">
+            <input id="check" type="checkbox" class="main__checkbox">
+
+            Business purchase
+          </label>
+
+          <input type="text" class="main__email" placeholder="E-mail *">
+          
+          <div class="main__block">
+            <input type="text" class="main__first" placeholder="First name *"> 
+            <input type="text" class="main__last" placeholder="Last name *"> 
+          </div>
+
+          <select class="main__country"></select>
+
+          <input type="text" class="main__phone" placeholder="Phone number">
+          <hr>
+
+          <div class="main__block images">
+            <div class="images__image">
+              <image
+              src="./images/visa.webp"
+              alt=""
+              class="images__visa"
+            >
+            </div>
+            
+            <div class="images__image">
+              <image
+              src="./images/paypal.png"
+              alt=""
+              class="images__paypal"
+            >
+            </div>
+            
+          </div>
+          
+          <input type="text" class="main__card" placeholder="Card number *">
+
+          <div class="main__block card">
+            <div class="card__flex">
+              <select class="card__month"></select>
+
+              <select class="card__year"></select>
+            </div>
+
+            <input
+              type="text"
+              placeholder="Security code *"
+              minlength="3"
+              maxlength="3"
+              class="card__code"
+            >
+          </div>
+
+          <p class='main__error'>
+            The email must be a valid email address.
+          </p>
+        </div>
+
+        <div class="form__info info">
+          <h2 class="info__title">
+            You're Buying
+          </h2>
+
+          <div class="info__product product">
+            Some product
+          </div>
+        </div>
+      </div>
+
+      <div class="form__btn">
+        Submit order
+      </div>
+    </form>
+  </body>
+</html>
